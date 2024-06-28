@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4001;
 
 app.use(bodyParser.json());
 
-app.post('/bitrix24-handler', (req: Request, res: Response) => {
+app.post('/bitrix24-handler', (req, res) => {
     
     const token = req.body.token;
     if (!token) {
